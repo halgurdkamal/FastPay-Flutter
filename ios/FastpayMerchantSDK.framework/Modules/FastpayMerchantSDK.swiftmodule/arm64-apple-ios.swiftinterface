@@ -1,0 +1,88 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name FastpayMerchantSDK
+import CoreGraphics
+@_exported import FastpayMerchantSDK
+import Foundation
+import QuartzCore
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+@objc public enum FPCurrency : Swift.Int {
+  case IQD = 0
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FPEnvironment : Swift.Int {
+  case Sandbox
+  case Production
+  case Development
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FPLanguage : Swift.Int {
+  case English
+  case Arabic
+  case Kurdish
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func workaround_nonRepeatingSetHidden(hidden: Swift.Bool)
+}
+@objc public protocol FastPayDelegate {
+  @objc func fastpayTransactionSucceeded(with transaction: FastpayMerchantSDK.FPTransaction)
+  @objc func fastpayTransactionFailed(with orderId: Swift.String)
+}
+@objc public class Fastpay : ObjectiveC.NSObject {
+  @objc weak public var delegate: FastpayMerchantSDK.FastPayDelegate?
+  @objc public init(storeId: Swift.String, storePassword: Swift.String, orderId: Swift.String, amount: Swift.Int, currency: FastpayMerchantSDK.FPCurrency)
+  @objc public func start(in viewController: UIKit.UIViewController, for environment: FastpayMerchantSDK.FPEnvironment)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FPTransaction : ObjectiveC.NSObject {
+  @objc public var transactionId: Swift.String? {
+    get
+  }
+  @objc public var orderId: Swift.String? {
+    get
+  }
+  public var amount: Swift.Int? {
+    get
+  }
+  public var currency: FastpayMerchantSDK.FPCurrency? {
+    get
+  }
+  @objc public var customerMobileNo: Swift.String? {
+    get
+  }
+  @objc public var customerName: Swift.String? {
+    get
+  }
+  @objc public var status: Swift.String? {
+    get
+  }
+  @objc public var transactionTime: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension FastpayMerchantSDK.FPCurrency : Swift.Equatable {}
+extension FastpayMerchantSDK.FPCurrency : Swift.Hashable {}
+extension FastpayMerchantSDK.FPCurrency : Swift.RawRepresentable {}
+extension FastpayMerchantSDK.FPEnvironment : Swift.Equatable {}
+extension FastpayMerchantSDK.FPEnvironment : Swift.Hashable {}
+extension FastpayMerchantSDK.FPEnvironment : Swift.RawRepresentable {}
+extension FastpayMerchantSDK.FPLanguage : Swift.Equatable {}
+extension FastpayMerchantSDK.FPLanguage : Swift.Hashable {}
+extension FastpayMerchantSDK.FPLanguage : Swift.RawRepresentable {}
