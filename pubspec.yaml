@@ -1,7 +1,7 @@
 name: fastpay
 description: fastpay plagin for payment
-version: 0.0.1
-# homepage:
+version: 0.0.2
+homepage: https://github.com/halgurdkamal/FastPay-Flutter
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
