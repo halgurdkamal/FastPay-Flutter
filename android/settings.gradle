@@ -1,1 +1,3 @@
 rootProject.name = 'fastpay'
+android.enableJetifier=true
+android.useAndroidX=true

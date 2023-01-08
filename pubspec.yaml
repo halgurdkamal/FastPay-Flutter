@@ -1,6 +1,6 @@
 name: fastpay
 description: fastpay plagin for payment
-version: 0.0.2
+version: 0.0.4
 homepage: https://github.com/halgurdkamal/FastPay-Flutter
 
 environment:
@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  flutter_aar: ^0.0.5
 
 dev_dependencies:
   flutter_test:
