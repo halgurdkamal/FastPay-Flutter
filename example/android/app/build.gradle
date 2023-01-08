@@ -39,7 +39,7 @@ android {
         applicationId "com.fastpay.fastpay_example"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
-        minSdkVersion 22
+        minSdkVersion 24
         targetSdkVersion 32
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -61,3 +61,5 @@ flutter {
 dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
 }
+
+
