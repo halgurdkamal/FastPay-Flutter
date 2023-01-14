@@ -120,7 +120,7 @@ public class FastpayPlugin implements FlutterPlugin, MethodCallHandler , Activit
           if (data != null && data.hasExtra(FastpayResult.EXTRA_PAYMENT_RESULT)) {
             FastpayResult result = data.getParcelableExtra(FastpayResult.EXTRA_PAYMENT_RESULT);
             //? is payment success
-            mResult.success("{\\\"isSuccess\\\":true,\\\"errorMessage\\\":\\\"null\\\",\\\"transactionStatus\\\":\\\""+result.getTransactionStatus()+"\\\",\\\"transactionId\\\":\\\""+result.getTransactionId()+"\\\",\\\"orderId\\\":\\\""+result.getOrderId()+"\\\",\\\"paymentAmount\\\":\\\""+result.getPaymentAmount()+"\\\",\\\"paymentCurrency\\\":\\\""+result.getPaymentCurrency()+"\\\",\\\"payeeName\\\":\\\""+result.getPayeeName()+"\\\",\\\"payeeMobileNumber\\\":\\\""+result.getPayeeMobileNumber()+"\\\",\\\"paymentTime\\\":\\\""+result.getPaymentTime()+"\\\"}");
+            mResult.success("{\"isSuccess\":true,\"errorMessage\":\"\",\"transactionStatus\":\""+result.getTransactionStatus()+"\",\"transactionId\":\""+result.getTransactionId()+"\",\"orderId\":\""+result.getOrderId()+"\",\"paymentAmount\":\""+result.getPaymentAmount()+"\",\"paymentCurrency\":\""+result.getPaymentCurrency()+"\",\"payeeName\":\""+result.getPayeeName()+"\",\"payeeMobileNumber\":\""+result.getPayeeMobileNumber()+"\",\"paymentTime\":\""+result.getPaymentTime()+"\"}");
           }
           break;
 
