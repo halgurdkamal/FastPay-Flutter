@@ -1,0 +1,11 @@
+framework module FastpayMerchantSDK {
+  umbrella header "FastpayMerchantSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module FastpayMerchantSDK.Swift {
+    header "FastpayMerchantSDK-Swift.h"
+    requires objc
+}
