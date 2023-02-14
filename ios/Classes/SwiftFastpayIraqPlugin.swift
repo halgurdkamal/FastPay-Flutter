@@ -2,9 +2,8 @@ import Flutter
 import UIKit
 import FastpayMerchantSDK
 
-
-public class SwiftFastpayPlugin: UIViewController, FlutterPlugin, FastPayDelegate {
-    var resultG: FlutterResult!
+public class SwiftFastpayIraqPlugin: NSObject, FlutterPlugin {
+  var resultG: FlutterResult!
     var isPresented: Bool = false
     var timer: Timer?
 
@@ -78,32 +77,5 @@ public class SwiftFastpayPlugin: UIViewController, FlutterPlugin, FastPayDelegat
           result("{\"isSuccess\":false,\"errorMessage\":\""+"\(e)"+"\",\"transactionStatus\":\"\",\"transactionId\":\"\",\"orderId\":\"\",\"paymentAmount\":\"\",\"paymentCurrency\":\"\",\"payeeName\":\"\",\"payeeMobileNumber\":\"\",\"paymentTime\":\"\"}")
       }
     
-
-      
-      
-    
-//      let navigationController = UINavigationController(rootViewController: fastpay)
-//      present(navigationController, animated: true, completion: nil)
-//      navigationController.viewDidLoad
-//      do{
-//          let randomInt = Int.random(in: 0..<1000000)
-//          let testObj = Fastpay(storeId: "748908_339", storePassword: "R3D)BYN;w", orderId: String(randomInt) , amount: 500, currency: .IQD)
-//          testObj.delegate = self
-//          testObj.start(in: (UIApplication.shared.keyWindow?.rootViewController!)!, for: .Sandbox)  { result in
-//              switch result {
-//              case .success(let transaction):
-//                  print(transaction)
-//              case .failure(let error):
-//                  print(error)
-//              }
-//          }
-//
-//
-//      } catch let error {
-//          print(error.localizedDescription)
-//      }
-  }
-    
 }
-
-
+}

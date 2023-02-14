@@ -1,10 +1,10 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint fastpay.podspec` to validate before publishing.
+# Run `pod lib lint fastpay_iraq.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
   s.name             = 'fastpay_iraq'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC
 A new Flutter plugin project.
@@ -24,7 +24,4 @@ A new Flutter plugin project.
   s.preserve_paths = 'FastpayMerchantSDK.framework'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-framework FastpayMerchantSDK' }
   s.vendored_frameworks = 'FastpayMerchantSDK.framework'
-    
-  
-
 end

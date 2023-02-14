@@ -10,6 +10,6 @@
 
 @implementation FastpayIraqPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  [SwiftFastpayPlugin registerWithRegistrar:registrar];
+  [SwiftFastpayIraqPlugin registerWithRegistrar:registrar];
 }
 @end

@@ -1,5 +1,5 @@
 PODS:
-  - fastpay_iraq (1.0.1):
+  - fastpay_iraq (1.0.2):
     - Flutter
   - Flutter (1.0.0)
 
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  fastpay_iraq: c4dc6aeb8c49a18ebaab0d8ef45b2b2f25063087
+  fastpay_iraq: f941abc0b334082524d5358e85e39fcc358f5341
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
 
 PODFILE CHECKSUM: 044fcdb235c67cda34b233a0f09a79134cabc0b6
