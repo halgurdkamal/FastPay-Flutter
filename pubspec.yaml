@@ -1,6 +1,6 @@
 name: fastpay_iraq
 description: FastPay Iraq Flutter Plugin for Android and iOS to integrate FastPay payment gateway in your app. 
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/halgurdkamal/FastPay-Flutter
 # publish_to: anyone
 
