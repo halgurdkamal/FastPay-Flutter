@@ -2,7 +2,7 @@ import Flutter
 import UIKit
 import FastpayMerchantSDK
 
-public class SwiftFastpayIraqPlugin: NSObject, FlutterPlugin, FlutterPlugin, FastPayDelegate {
+public class SwiftFastpayIraqPlugin: NSObject, UIViewController, FlutterPlugin, FastPayDelegate {
   var resultG: FlutterResult!
     var isPresented: Bool = false
     var timer: Timer?
