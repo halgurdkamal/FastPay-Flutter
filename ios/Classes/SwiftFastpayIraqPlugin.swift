@@ -27,7 +27,7 @@ public class SwiftFastpayIraqPlugin: NSObject, UIViewController, FlutterPlugin, 
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "fastpay", binaryMessenger: registrar.messenger())
-    let instance = SwiftFastpayPlugin()
+    let instance = SwiftFastpayIraqPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
