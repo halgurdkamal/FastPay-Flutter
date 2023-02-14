@@ -1,27 +1,21 @@
 PODS:
-  - fastpay (0.0.1):
+  - fastpay_iraq (0.0.1):
     - Flutter
   - Flutter (1.0.0)
-  - flutter_aar (0.0.1):
-    - Flutter
 
 DEPENDENCIES:
-  - fastpay (from `.symlinks/plugins/fastpay/ios`)
+  - fastpay_iraq (from `.symlinks/plugins/fastpay_iraq/ios`)
   - Flutter (from `Flutter`)
-  - flutter_aar (from `.symlinks/plugins/flutter_aar/ios`)
 
 EXTERNAL SOURCES:
-  fastpay:
-    :path: ".symlinks/plugins/fastpay/ios"
+  fastpay_iraq:
+    :path: ".symlinks/plugins/fastpay_iraq/ios"
   Flutter:
     :path: Flutter
-  flutter_aar:
-    :path: ".symlinks/plugins/flutter_aar/ios"
 
 SPEC CHECKSUMS:
-  fastpay: 56df25e1bd1989f9805e5cc23af3409ffd490c2c
+  fastpay_iraq: 18c05c20dc2d86e048a2cc60a71b10b7bbec57ca
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  flutter_aar: 8a6f1de617b44492451f76ed9f2fa226fbfd963e
 
 PODFILE CHECKSUM: 044fcdb235c67cda34b233a0f09a79134cabc0b6
 
