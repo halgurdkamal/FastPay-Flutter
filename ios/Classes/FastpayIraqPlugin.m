@@ -1,6 +1,6 @@
-#import "FastpayPlugin.h"
-#if __has_include(<fastpay/fastpay_iraq-Swift.h>)
-#import <fastpay/fastpay_iraq-Swift.h>
+#import "FastpayIraqPlugin.h"
+#if __has_include(<fastpay_iraq/fastpay_iraq-Swift.h>)
+#import <fastpay_iraq/fastpay_iraq-Swift.h>
 #else
 // Support project import fallback if the generated compatibility header
 // is not copied when this plugin is created as a library.
@@ -8,7 +8,7 @@
 #import "fastpay_iraq-Swift.h"
 #endif
 
-@implementation FastpayPlugin
+@implementation FastpayIraqPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   [SwiftFastpayPlugin registerWithRegistrar:registrar];
 }
