@@ -13,10 +13,11 @@ Accept payments with FastPay's APIs. Our simple and easy-to-integrate APIs allow
 - you need contact FastPay to get storeID and Password
 
 
+
 ## Installation
 ``` 
 dependencies:
-  fastpay: ^1.0.1
+  fastpay: ^1.0.2
 ```
 
 ## Android 
@@ -62,7 +63,8 @@ add this line to  manifest
 ```
 
 ## IOS
-It doesn't need to be changed  
+It doesn't need to be changed
+- iOS only supports real device you can't test it on simulator because FastPay SDK not support simulator
 
 ___
 
